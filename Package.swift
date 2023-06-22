@@ -30,8 +30,8 @@ let package = Package(
                 ),
             ],
             swiftSettings: [.unsafeFlags([
-                "--target x86_64-apple-ios11.0-simulator",
-                "--sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.5.sdk"
+                "--target x86_64-apple-ios-simulato",
+                "--sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator16.4.sdk"
             ], .when(configuration: .debug))]
         ),
     ]
