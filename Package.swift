@@ -28,7 +28,11 @@ let package = Package(
                     package: "Highlightr",
                     condition: .when(platforms: [.iOS, .macOS])
                 ),
-            ]
+            ],
+            swiftSettings: [.unsafeFlags([
+                "--target x86_64-apple-ios11.0-simulator",
+                "--sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.5.sdk"
+            ], .when(configuration: .debug))]
         ),
     ]
 )
